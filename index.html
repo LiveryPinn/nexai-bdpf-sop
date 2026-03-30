@@ -1520,7 +1520,6 @@
         <span class="arrow">&#9656;</span>
       </div>
       <div class="sidebar-items">
-        <a href="#assembly-cover" class="sidebar-item" data-sop="assembly" onclick="navigateTo('assembly', 'assembly-cover')">Cover</a>
         <a href="#assembly-job" class="sidebar-item" data-sop="assembly" onclick="navigateTo('assembly', 'assembly-job')">Tugas Kamu</a>
         <a href="#assembly-tools" class="sidebar-item" data-sop="assembly" onclick="navigateTo('assembly', 'assembly-tools')">Tools & Software</a>
         <a href="#assembly-folders" class="sidebar-item" data-sop="assembly" onclick="navigateTo('assembly', 'assembly-folders')">Lokasi File</a>
@@ -1543,7 +1542,6 @@
         <span class="arrow">&#9656;</span>
       </div>
       <div class="sidebar-items">
-        <a href="#tutorial-cover" class="sidebar-item" data-sop="tutorial" onclick="navigateTo('tutorial', 'tutorial-cover')">Cover</a>
         <a href="#tutorial-dasar" class="sidebar-item" data-sop="tutorial" onclick="navigateTo('tutorial', 'tutorial-dasar')">Dasar Photoshop</a>
         <a href="#tutorial-font" class="sidebar-item" data-sop="tutorial" onclick="navigateTo('tutorial', 'tutorial-font')">Install Font</a>
         <a href="#tutorial-panel" class="sidebar-item" data-sop="tutorial" onclick="navigateTo('tutorial', 'tutorial-panel')">Panel / Frame</a>
@@ -1575,17 +1573,6 @@
 <!-- Main Content -->
 <main class="main">
   <div class="sop-container active" id="sop-assembly">
-<section class="slide" id="assembly-cover">
-  <div class="slide-number">SOP Tim NexAI</div>
-  <h1>
-    <span class="highlight">BD&PF</span> Komik<br>
-    Perakitan Halaman
-  </h1>
-  <p class="subtitle">
-    Panduan Operasional Standar untuk merakit panel AI mentah menjadi halaman komik jadi lengkap dengan balon bicara, dialog, dan SFX.
-  </p>
-  <p class="version">Versi 1.0 &mdash; Maret 2026</p>
-</section>
 <section class="slide" id="assembly-job">
   <div class="slide-number">Bagian 01</div>
   <h2>Tugas Kamu</h2>
@@ -2198,154 +2185,6 @@
 </section>
   </div>
   <div class="sop-container" id="sop-tutorial">
-<section class="slide" id="tutorial-cover">
-  <div class="slide-number">Tutorial</div>
-  <h1>Tutorial <span class="highlight">Photoshop</span><br>BD&PF Comic</h1>
-  <p class="subtitle">
-    Panduan step-by-step menggunakan Adobe Photoshop untuk merakit halaman komik Black Dragon & Pink Firefly.
-  </p>
-  <p class="version">Tim NexAI &mdash; Versi 1.0 &mdash; Maret 2026</p>
-
-  <div style="margin-top: 40px;">
-    <h3 style="color: var(--text); font-size: 18px;">Yang akan kamu pelajari:</h3>
-    <div class="flow" style="max-width: 500px;">
-      <div class="flow-step"><span class="num">1</span> Dasar Photoshop</div>
-      <div class="flow-arrow">&darr;</div>
-      <div class="flow-step"><span class="num">2</span> Install Font Mangaka</div>
-      <div class="flow-arrow">&darr;</div>
-      <div class="flow-step"><span class="num">3</span> Bikin Panel / Frame</div>
-      <div class="flow-arrow">&darr;</div>
-      <div class="flow-step"><span class="num">4</span> Place & Crop Raw Image</div>
-      <div class="flow-arrow">&darr;</div>
-      <div class="flow-step"><span class="num">5</span> Borderless Panel</div>
-      <div class="flow-arrow">&darr;</div>
-      <div class="flow-step"><span class="num">6</span> Bikin Bubble Chat</div>
-      <div class="flow-arrow">&darr;</div>
-      <div class="flow-step"><span class="num">7</span> Baca Script PDF</div>
-      <div class="flow-arrow">&darr;</div>
-      <div class="flow-step"><span class="num">8</span> Export PNG / JPG</div>
-    </div>
-  </div>
-</section>
-<section class="slide" id="tutorial-dasar">
-  <div class="slide-number">Slide 1</div>
-  <h2>Dasar Photoshop</h2>
-
-  <h3>Buka Canvas Baru</h3>
-  <div class="steps">
-    <div class="step">
-      <div class="step-num">1</div>
-      <div class="step-content">
-        <h4>Buka Photoshop</h4>
-        <p>Buka Adobe Photoshop. Klik <strong>File &rarr; New</strong> atau tekan <kbd>Ctrl+N</kbd></p>
-      </div>
-    </div>
-    <div class="step">
-      <div class="step-num">2</div>
-      <div class="step-content">
-        <h4>Setting Canvas</h4>
-        <p>
-          Isi setting berikut:<br>
-          &bull; <strong>Width:</strong> 210 mm (A4)<br>
-          &bull; <strong>Height:</strong> 297 mm (A4)<br>
-          &bull; <strong>Resolution:</strong> 600 Pixels/Inch (DPI)<br>
-          &bull; <strong>Color Mode:</strong> CMYK Color, 8 bit (kita kerja di CMYK, convert ke RGB nanti saat export)<br>
-          &bull; <strong>Background:</strong> White
-        </p>
-      </div>
-    </div>
-    <div class="step">
-      <div class="step-num">3</div>
-      <div class="step-content">
-        <h4>Klik Create</h4>
-        <p>Canvas A4 600 DPI kamu sudah siap. Ini ukuran standar untuk semua halaman komik BD&PF.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="warning">Selalu gunakan 600 DPI. Jangan 72 atau 300 &mdash; hasil cetak akan buram.</div>
-
-  <h3 style="margin-top: 32px;">Panel Layers</h3>
-  <p style="color: var(--text-muted); margin-bottom: 16px;">
-    Layers adalah konsep paling penting di Photoshop. Bayangkan seperti tumpukan kertas transparan &mdash; setiap elemen ada di lapisan sendiri.
-  </p>
-
-  <table>
-    <tr><th>Aksi</th><th>Cara</th></tr>
-    <tr><td>Buka panel Layers</td><td><kbd>F7</kbd> atau <strong>Window &rarr; Layers</strong></td></tr>
-    <tr><td>Tambah layer baru</td><td>Klik ikon <strong>+</strong> di bawah panel Layers, atau <kbd>Ctrl+Shift+N</kbd></td></tr>
-    <tr><td>Rename layer</td><td>Double-click nama layer &rarr; ketik nama baru</td></tr>
-    <tr><td>Pindahkan urutan</td><td>Drag layer naik/turun di panel</td></tr>
-    <tr><td>Sembunyikan layer</td><td>Klik ikon mata di sebelah kiri layer</td></tr>
-    <tr><td>Hapus layer</td><td>Pilih layer &rarr; tekan <kbd>Delete</kbd> atau drag ke ikon tempat sampah</td></tr>
-  </table>
-
-  <div class="tip">Selalu beri nama layer yang jelas (contoh: "Panel 1", "Bubble BD", "Background"). Ini akan sangat membantu saat halaman sudah kompleks.</div>
-
-  <h3 style="margin-top: 32px;">Tools Utama yang Akan Kamu Pakai</h3>
-  <div class="tool-grid">
-    <div class="tool-item">
-      <div class="tool-key">V</div>
-      <div class="tool-name">Move Tool</div>
-      <div class="tool-desc">Geser dan posisikan elemen</div>
-    </div>
-    <div class="tool-item">
-      <div class="tool-key">M</div>
-      <div class="tool-name">Marquee Selection</div>
-      <div class="tool-desc">Seleksi area berbentuk kotak/lingkaran</div>
-    </div>
-    <div class="tool-item">
-      <div class="tool-key">U</div>
-      <div class="tool-name">Shape Tool</div>
-      <div class="tool-desc">Bikin kotak, lingkaran, custom shape</div>
-    </div>
-    <div class="tool-item">
-      <div class="tool-key">T</div>
-      <div class="tool-name">Text Tool</div>
-      <div class="tool-desc">Tulis dan edit teks dialogue</div>
-    </div>
-    <div class="tool-item">
-      <div class="tool-key">B</div>
-      <div class="tool-name">Brush Tool</div>
-      <div class="tool-desc">Gambar/paint manual</div>
-    </div>
-    <div class="tool-item">
-      <div class="tool-key">E</div>
-      <div class="tool-name">Eraser Tool</div>
-      <div class="tool-desc">Hapus bagian gambar</div>
-    </div>
-    <div class="tool-item">
-      <div class="tool-key">P</div>
-      <div class="tool-name">Pen Tool</div>
-      <div class="tool-desc">Bikin path/shape presisi (untuk bubble tail)</div>
-    </div>
-    <div class="tool-item">
-      <div class="tool-key">Z</div>
-      <div class="tool-name">Zoom Tool</div>
-      <div class="tool-desc">Zoom in/out. Atau tekan <kbd>Ctrl++</kbd> / <kbd>Ctrl+-</kbd></div>
-    </div>
-  </div>
-
-  <h3 style="margin-top: 32px;">Save File</h3>
-  <div class="steps">
-    <div class="step">
-      <div class="step-num">1</div>
-      <div class="step-content">
-        <h4>Save as PSD</h4>
-        <p><kbd>Ctrl+S</kbd> &rarr; pilih format <strong>Photoshop (*.PSD)</strong></p>
-      </div>
-    </div>
-    <div class="step">
-      <div class="step-num">2</div>
-      <div class="step-content">
-        <h4>Simpan di folder WIP</h4>
-        <p>Save ke <span class="filepath">issues/iNN/wip/</span> &mdash; ganti NN dengan nomor issue (contoh: <span class="filepath">issues/i10/wip/</span>)</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="tip">Save sering! Tekan <kbd>Ctrl+S</kbd> setiap beberapa menit. Photoshop bisa crash kapan saja.</div>
-</section>
 <section class="slide" id="tutorial-font">
   <div class="slide-number">Slide 2</div>
   <h2>Install Font Mangaka</h2>
